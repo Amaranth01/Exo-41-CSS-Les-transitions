@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 65.5%;
+}
+
+#container {
+    width: 100%;
+}
+
+#div1 {
+    background-color: black;
+    width: 20rem;
+    height: 20rem;
+    transition: background-color;
+    transition-duration: 6s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 500ms;
+}
+
+#div1:hover {
+    background-color: lightgrey;
+    width: 30rem;
+    height: 30rem;
+}
+
+#div2 {
+    width: 20rem;
+    height: 20rem;
+}
+
+#p1 {
+    transition: color;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+    transition-delay: 3ms;
+}
+
+#p1:hover {
+    color: darkred;
+    font-size: 3rem;
+}
+
+#p2 {
+    transition: color;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+    transition-delay: 3ms;
+}
+
+#p2:hover {
+    color: blue;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 350px){
+
+    #div1, #div2 {
+        width: 15rem;
+        height: 15rem;
+    }
+
+}
